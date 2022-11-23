@@ -16,7 +16,7 @@ function GraphicService() {
           <p className="uppercase text-xl my-4">Design Philosophy:</p>
           <ul className="text-4xl space-y-4">
             <li>Function over Form</li>
-            <li>Simpicty</li>
+            <li>Keep it simple</li>
           </ul>
         </a>
       </div>
