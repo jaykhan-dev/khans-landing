@@ -10,6 +10,11 @@ import Head from "next/head";
 import Marquee from "react-fast-marquee";
 import styles from "../components/hero.module.css";
 import { useState, useEffect } from "react";
+import Scene from "../components/reactThreeFiber";
+import SceneTwo from "../components/reactThreeFiberTwo";
+import Iframe from "react-iframe";
+import Temple from "../components/temple";
+import Spheres from "../components/reactThreeFiberTwo";
 
 const heroVariants = {
   hidden: {
@@ -24,6 +29,8 @@ const heroVariants = {
 };
 
 function Home() {
+  // useEffect(() => {}, []);
+
   return (
     <>
       <Head>
@@ -50,13 +57,23 @@ function Home() {
           <h1 className={styles.largeText}>Jay Khan</h1>
           <div className="mx-20 w-64 border-t border-black"></div>
         </Marquee>
-        <motion.div className={styles.splineHeight}>
-          <iframe
-            src="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
-            frameBorder="0"
+        <motion.div
+          className={styles.spline}
+          initial="hidden"
+          animate="visible"
+          variants={heroVariants}
+        >
+          {/* <Iframe
+            url="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
             width="100%"
             height="100%"
-          ></iframe>
+            display="block"
+            position="absolute"
+          /> */}
+
+          {/* <Temple /> */}
+          <Spheres />
+          {/* <SceneTwo /> */}
         </motion.div>
       </motion.div>
       <motion.div>

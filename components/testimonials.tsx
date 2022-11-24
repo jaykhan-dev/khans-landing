@@ -7,7 +7,7 @@ function Testimonials() {
   return (
     <section id="testimonials" className="grid place-items-center my-20 py-20">
       <p className="uppercase text-xl">Testimonials</p>
-      <div className="h-72 w-full lg:w-2/3 grid place-items-center lg:mx-auto my-20">
+      <div className="h-96 w-full lg:w-2/3 grid place-items-center lg:mx-auto my-20">
         <Carousel leftControl="<<" rightControl=">>" indicators={false}>
           {/* SLIDE 1 */}
           <div className="grid place-items-center p-6">

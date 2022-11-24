@@ -35,7 +35,7 @@ function Bio() {
       variants={variants}
     >
       <motion.div
-        className="absolute bottom-0 right-0 bg-green-200 h-64 w-64 blur-xl rounded-full opacity-70"
+        className="absolute bottom-0 right-0 bg-blue-200 h-96 w-96 blur-xl rounded-full opacity-40"
         style={{ y }}
       ></motion.div>
       <motion.div className="z-40 grid place-items-center" style={{ y }}>
