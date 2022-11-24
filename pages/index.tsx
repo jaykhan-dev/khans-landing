@@ -2,18 +2,12 @@ import React from "react";
 import Script from "next/script";
 import { motion } from "framer-motion";
 import Projects from "../components/projects";
-import Services from "../components/services";
 import ServicesTwo from "../components/servicesTwo";
 import Testimonials from "../components/testimonials";
 import Bio from "../components/bio";
 import Head from "next/head";
 import Marquee from "react-fast-marquee";
 import styles from "../components/hero.module.css";
-import { useState, useEffect } from "react";
-import Scene from "../components/reactThreeFiber";
-import SceneTwo from "../components/reactThreeFiberTwo";
-import Iframe from "react-iframe";
-import Temple from "../components/temple";
 import Spheres from "../components/reactThreeFiberTwo";
 
 const heroVariants = {
@@ -29,8 +23,6 @@ const heroVariants = {
 };
 
 function Home() {
-  // useEffect(() => {}, []);
-
   return (
     <>
       <Head>

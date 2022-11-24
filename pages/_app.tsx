@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import { AppProps } from "next/app";
-import Nav from "../components/nav";
 import Footer from "../components/footer";
 import NavTwo from "../components/navTwo";
 import { useState, useEffect } from "react";
