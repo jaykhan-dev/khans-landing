@@ -122,40 +122,40 @@ function NavTwo() {
               ref={ref}
               className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center text-xl uppercase"
             >
-              <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium"
-              >
-                Dashboard
-              </a>
-
-              <a
-                href="#"
-                className=" block px-3 py-2 rounded-md text-base font-medium"
-              >
-                Team
-              </a>
-
-              <a
-                href="#"
+              <Link
+                href="#projects"
                 className="block px-3 py-2 rounded-md text-base font-medium"
               >
                 Projects
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                href="#services-two"
+                className=" block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Services
+              </Link>
+
+              <Link
+                href="#testimonials"
                 className="block px-3 py-2 rounded-md text-base font-medium"
               >
-                Calendar
-              </a>
+                Testimonials
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                href="#bio"
                 className="block px-3 py-2 rounded-md text-base font-medium"
               >
-                Reports
-              </a>
+                Bio
+              </Link>
+
+              <Link
+                href="#contact"
+                className="block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         )}

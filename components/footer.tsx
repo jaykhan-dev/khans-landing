@@ -4,12 +4,6 @@ import styles from "./hover.module.css";
 import Link from "next/link";
 
 function Footer() {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
-
   return (
     <>
       <section id="contact" className="bg-sky-200 grid place-items-center">
@@ -25,11 +19,12 @@ function Footer() {
           <div className="w-64 my-8">
             {/* @ts-ignore */}
             <lottie-player
-              src="https://assets2.lottiefiles.com/packages/lf20_v7gj8hb1.json"
+              src="https://assets8.lottiefiles.com/packages/lf20_v7gj8hb1.json"
               background="transparent"
               speed="1"
               loop
               autoplay
+              class="opacity-50"
             />
           </div>
           {/* <button className="hover:bg-black hover:scale-110 duration-300 hover:text-white text-2xl border-2 border-black rounded-full p-4 px-4 my-10">

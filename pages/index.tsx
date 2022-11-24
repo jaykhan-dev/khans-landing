@@ -1,7 +1,9 @@
 import React from "react";
+import Script from "next/script";
 import { motion } from "framer-motion";
 import Projects from "../components/projects";
 import Services from "../components/services";
+import ServicesTwo from "../components/servicesTwo";
 import Testimonials from "../components/testimonials";
 import Bio from "../components/bio";
 import Head from "next/head";
@@ -25,7 +27,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Khans Landing</title>
+        <title>Khans-Landing</title>
         <meta />
         <link
           rel="stylesheet"
@@ -35,6 +37,7 @@ function Home() {
           referrerPolicy="no-referrer"
         />
       </Head>
+      <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script>
 
       <motion.div
         className="my-20"
@@ -47,12 +50,7 @@ function Home() {
           <h1 className={styles.largeText}>Jay Khan</h1>
           <div className="mx-20 w-64 border-t border-black"></div>
         </Marquee>
-        <motion.div
-          className={styles.splineHeight}
-          initial="hidden"
-          animate="visible"
-          variants={heroVariants}
-        >
+        <motion.div className={styles.splineHeight}>
           <iframe
             src="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
             frameBorder="0"
@@ -65,7 +63,7 @@ function Home() {
         <Projects />
       </motion.div>
       <motion.div>
-        <Services />
+        <ServicesTwo />
       </motion.div>
       <motion.div>
         <Testimonials />

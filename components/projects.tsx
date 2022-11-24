@@ -8,15 +8,11 @@ import Appreci from "../public/images/logos/projects_appreci.png";
 function Projects() {
   const ref = useRef(null);
 
-  useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
-
   return (
     <section
       id="projects"
       aria-label="projects"
-      className="grid place-items-center lg:w-1/2 mx-auto"
+      className="grid place-items-center lg:w-1/2 mx-auto p-4"
     >
       <p className="text-xl uppercase">Projects</p>
       <div className="my-20 w-full grid lg:grid-cols-2 gap-10">
@@ -35,9 +31,9 @@ function Projects() {
               <p>01</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl font-black">ShayBeas</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">ShayBeas</h2>
             {/* LINKS */}
-            <div className="flex items-center my-2 lg:space-x-4 text-2xl">
+            <div className="flex items-center my-2 space-x-4 text-2xl">
               <a
                 href="https://jaykhan.xyz/docs/web-dev/shaybeas-enterprises"
                 rel="noreferrer noopener"
@@ -67,9 +63,9 @@ function Projects() {
               <p>02</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl font-black">Appreci</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">Appreci</h2>
             {/* LINKS */}
-            <div className="flex items-center my-2 lg:space-x-4 text-2xl">
+            <div className="flex items-center my-2 space-x-4 text-2xl">
               <a
                 href="https://jaykhan.xyz/docs/web-dev/appreci"
                 rel="noreferrer noopener"
@@ -99,7 +95,7 @@ function Projects() {
               <p>03</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl font-black">Lighthouse Labs</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">Lighthouse Labs</h2>
             {/* LINKS */}
             <div className="flex items-center my-2 lg:space-x-4 text-2xl">
               <a
@@ -136,7 +132,7 @@ function Projects() {
               <p>04</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl font-black">Scribendi</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">Scribendi</h2>
             {/* LINKS */}
             <div className="flex items-center my-2 lg:space-x-4 text-2xl">
               <a
