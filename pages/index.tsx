@@ -8,7 +8,8 @@ import Bio from "../components/bio";
 import Head from "next/head";
 import Marquee from "react-fast-marquee";
 import styles from "../components/hero.module.css";
-import Spheres from "../components/reactThreeFiberTwo";
+// import Spheres from "../components/reactThreeFiberTwo";
+import Iframe from "react-iframe";
 
 const heroVariants = {
   hidden: {
@@ -55,16 +56,16 @@ function Home() {
           animate="visible"
           variants={heroVariants}
         >
-          {/* <Iframe
+          <Iframe
             url="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
             width="100%"
             height="100%"
             display="block"
             position="absolute"
-          /> */}
+          />
 
           {/* <Temple /> */}
-          <Spheres />
+          {/* <Spheres /> */}
           {/* <SceneTwo /> */}
         </motion.div>
       </motion.div>
