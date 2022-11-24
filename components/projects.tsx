@@ -109,14 +109,14 @@ function Projects() {
               >
                 <i className="fa-solid fa-file-invoice hover:cursor-pointer"></i>
               </a>
-              <a
+              {/* <a
                 href="https://www.lighthouselabs.ca"
                 rel="noreferrer noopener"
                 target="_blank"
                 className=""
               >
                 <i className="fa-solid fa-link hover:cursor-pointer"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -146,14 +146,14 @@ function Projects() {
               >
                 <i className="fa-solid fa-file-invoice hover:cursor-pointer"></i>
               </a>
-              <a
+              {/* <a
                 href="https://www.scribendi.com"
                 rel="noreferrer noopener"
                 target="_blank"
                 className=""
               >
                 <i className="fa-solid fa-link hover:cursor-pointer"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
