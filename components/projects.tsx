@@ -78,7 +78,7 @@ function Projects() {
                 <i className="fa-solid fa-file-invoice hover:cursor-pointer"></i>
               </a>
               <a
-                href="https://appreci.io"
+                href="https://appreci.netlify.app"
                 rel="noreferrer noopener"
                 target="_blank"
                 className=""

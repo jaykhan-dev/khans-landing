@@ -4,7 +4,7 @@ function FrontendService() {
   return (
     <div className="grid lg:grid-cols-2 lg:w-1/2 mx-auto text-center place-items-center">
       <div className="p-4 border-r border-black/20">
-        <h2 className="text-8xl font-black">$30/h</h2>
+        <h2 className="text-8xl font-black">$35/h</h2>
         <p className="text-xl my-4">
           A user interface optimized for responsiveness, accessibility, and
           performance.
