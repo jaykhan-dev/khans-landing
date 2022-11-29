@@ -4,6 +4,7 @@ import Shaybeas from "../public/images/logos/projects_shaybeas.png";
 import Scribendi from "../public/images/logos/projects_scribendi.png";
 import LHL from "../public/images/logos/projects_lhl.png";
 import Appreci from "../public/images/logos/projects_appreci.png";
+import Nozomi from "../public/images/logos/nozomi-150x150-100.jpg";
 
 function Projects() {
   const ref = useRef(null);
@@ -19,30 +20,25 @@ function Projects() {
         {/* ITEM */}
         <div className="flex items-center space-x-8 opacity-30 hover:opacity-100 duration-300">
           <div className="w-32 my-8 border border-black/20 rounded shadow-xl p-4">
-            <Image
-              src={Shaybeas}
-              width={150}
-              height={150}
-              alt="Shaybeas logo"
-            />
+            <Image src={Nozomi} width={150} height={150} alt="Shaybeas logo" />
           </div>
           <div>
             <div className="flex items-center space-x-4">
               <p>01</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl text-2xl font-black">ShayBeas</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">Nozomi Digital</h2>
             {/* LINKS */}
             <div className="flex items-center my-2 space-x-4 text-2xl">
               <a
-                href="https://jaykhan.xyz/docs/web-dev/shaybeas-enterprises"
+                href="https://jaykhan.xyz/docs/web-dev/nozomi-digital"
                 rel="noreferrer noopener"
                 target="_blank"
               >
                 <i className="fa-solid fa-file-invoice hover:cursor-pointer"></i>
               </a>
               <a
-                href="https://next-shaybeas.vercel.app/"
+                href="https://nozomi-digital.vercel.app/"
                 rel="noreferrer noopener"
                 target="_blank"
                 className=""
@@ -88,31 +84,36 @@ function Projects() {
         {/* ITEM */}
         <div className="flex items-center space-x-8 opacity-30 hover:opacity-100 duration-300">
           <div className="w-32 my-8 border border-black/20 rounded shadow-xl p-4">
-            <Image src={LHL} width={150} height={150} alt="Shaybeas logo" />
+            <Image
+              src={Shaybeas}
+              width={150}
+              height={150}
+              alt="Shaybeas logo"
+            />
           </div>
           <div>
             <div className="flex items-center space-x-4">
               <p>03</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl text-2xl font-black">Lighthouse Labs</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">Shaybeas</h2>
             {/* LINKS */}
             <div className="flex items-center my-2 lg:space-x-4 text-2xl">
               <a
-                href="https://jaykhan.xyz/docs/graphics/social-media"
+                href="https://jaykhan.xyz/docs/web-dev/shaybeas-enterprises"
                 rel="noreferrer noopener"
                 target="_blank"
               >
                 <i className="fa-solid fa-file-invoice hover:cursor-pointer"></i>
               </a>
-              {/* <a
-                href="https://www.lighthouselabs.ca"
+              <a
+                href="https://next-shaybeas.vercel.app/"
                 rel="noreferrer noopener"
                 target="_blank"
                 className=""
               >
                 <i className="fa-solid fa-link hover:cursor-pointer"></i>
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
