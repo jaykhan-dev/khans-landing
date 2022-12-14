@@ -4,7 +4,7 @@ import Shaybeas from "../public/images/logos/projects_shaybeas.png";
 import Scribendi from "../public/images/logos/projects_scribendi.png";
 import LHL from "../public/images/logos/projects_lhl.png";
 import Appreci from "../public/images/logos/projects_appreci.png";
-import Nozomi from "../public/images/logos/nozomi-150x150-100.jpg";
+import Melange from "../public/images/logos/melange-logo.png";
 
 function Projects() {
   const ref = useRef(null);
@@ -20,25 +20,25 @@ function Projects() {
         {/* ITEM */}
         <div className="flex items-center space-x-8 opacity-30 hover:opacity-100 duration-300">
           <div className="w-32 my-8 border border-black/20 rounded shadow-xl p-4">
-            <Image src={Nozomi} width={150} height={150} alt="Shaybeas logo" />
+            <Image src={Melange} width={150} height={150} alt="Melange logo" />
           </div>
           <div>
             <div className="flex items-center space-x-4">
               <p>01</p>
               <div className="border-t border-black w-24"></div>
             </div>
-            <h2 className="lg:text-4xl text-2xl font-black">Nozomi Digital</h2>
+            <h2 className="lg:text-4xl text-2xl font-black">Melange</h2>
             {/* LINKS */}
             <div className="flex items-center my-2 space-x-4 text-2xl">
               <a
-                href="https://jaykhan.xyz/docs/web-dev/nozomi-digital"
+                href="https://jaykhan.xyz/docs/web-dev/melange"
                 rel="noreferrer noopener"
                 target="_blank"
               >
                 <i className="fa-solid fa-file-invoice hover:cursor-pointer"></i>
               </a>
               <a
-                href="https://nozomi-digital.vercel.app/"
+                href="https://bitcoin-melange.vercel.app/"
                 rel="noreferrer noopener"
                 target="_blank"
                 className=""
@@ -52,7 +52,7 @@ function Projects() {
         {/* ITEM */}
         <div className="flex items-center space-x-8 opacity-30 hover:opacity-100 duration-300">
           <div className="w-32 my-8 border border-black/20 rounded shadow-xl p-4">
-            <Image src={Appreci} width={150} height={150} alt="Shaybeas logo" />
+            <Image src={Appreci} width={150} height={150} alt="Appreci logo" />
           </div>
           <div>
             <div className="flex items-center space-x-4">

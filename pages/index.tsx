@@ -56,6 +56,7 @@ function Home() {
           animate="visible"
           variants={heroVariants}
         >
+          <div className="absolute bottom-4 right-4 w-36 h-12 bg-white z-50"></div>
           <Iframe
             url="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
             width="100%"
