@@ -147,11 +147,11 @@ const Home: NextPage = ({ allProject }: any) => {
                     ))}
                   </button>
                   <p></p>
-                  <Link href="/">
+                  {/* <Link href="/">
                     <button className="bg-black text-white px-1 rounded">
                       See More
                     </button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}
