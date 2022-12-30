@@ -13,10 +13,10 @@ function GraphicService() {
       </div>
       <div className="p-4">
         <a href="https://jaykhan.xyz/docs/design-philosophy" rel="">
-          <p className="uppercase text-xl my-4">Design Philosophy:</p>
+          <p className="uppercase text-xl my-4">Tech Stack:</p>
           <ul className="text-4xl space-y-4">
-            <li>Function over Form</li>
-            <li>Keep it simple</li>
+            <li>Figma</li>
+            <li>Adobe CC</li>
           </ul>
         </a>
       </div>

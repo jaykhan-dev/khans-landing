@@ -25,12 +25,12 @@ function NavTwo() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <motion.nav
-      className=""
+      className="bg-blue-200/50"
       initial="hidden"
       animate="visible"
       variants={variants}
     >
-      <div className="max-w-8xl mx-auto p-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto p-2 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-between w-full">
             <div className="flex-shrink-0">

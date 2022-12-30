@@ -1,0 +1,13 @@
+.footer {
+  background-image: url("../public/images/horse-blue.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroBg {
+  background-image: url("../public/images/horse-art.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
