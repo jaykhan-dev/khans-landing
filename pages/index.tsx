@@ -3,6 +3,7 @@ import Script from "next/script";
 import { motion } from "framer-motion";
 import Projects from "../components/projects";
 import ServicesTwo from "../components/servicesTwo";
+import Services from "../components/services";
 // import Testimonials from "../components/testimonials";
 import Bio from "../components/bio";
 import Head from "next/head";
@@ -16,7 +17,8 @@ import { gql } from "@apollo/client";
 import client from "../apollo-client";
 import Image from "next/image";
 import Link from "next/link";
-import styels from "../components/bg.module.css";
+import Hero from "../components/hero";
+import Skills from "../components/skills";
 
 const heroVariants = {
   hidden: {
@@ -45,6 +47,11 @@ export async function getStaticProps() {
             _id
             title
           }
+          documentation
+          live
+          tags {
+            title
+          }
           projectImage {
             asset {
               url
@@ -71,103 +78,104 @@ const Home: NextPage = ({ allProject }: any) => {
     <>
       <Head>
         <title>Jay Khan Portfolio</title>
-        <meta />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
+        <meta
+          name="description"
+          content="Frontend developer, graphic designer, and Bitcoin advocate"
         />
       </Head>
       <Script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></Script>
+      <Hero />
 
-      <motion.div
-        className=""
-        initial="hidden"
-        animate="visible"
-        variants={heroVariants}
-      >
-        <div className="text-xl uppercase text-center bg-black text-white py-20">
-          <p>Portfolio</p>
-        </div>
-        <Marquee speed={100} className="flex space-x-10 items-center">
-          <h1 className={styles.largeText}>Jay Khan</h1>
-          <div className="mx-20 w-64 border-t border-black"></div>
-        </Marquee>
-        <motion.div
-          className={styles.spline}
-          initial="hidden"
-          animate="visible"
-          variants={heroVariants}
-        >
-          <div className="absolute bottom-4 right-4 w-36 h-12 z-50"></div>
-          <Iframe
-            url="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
-            width="100%"
-            height="100%"
-            display="block"
-            position="absolute"
-          />
-
-          {/* <Temple /> */}
-          {/* <Spheres /> */}
-          {/* <SceneTwo /> */}
-        </motion.div>
+      {/* SERVICES */}
+      <motion.div id="services">
+        <ServicesTwo />
       </motion.div>
 
       {/* PROJECTS DYNAMIC SANITY STUDIO */}
-      <motion.div className="p-4">
+      <motion.div className="p-4 bg-zinc-800">
         {/* <Projects /> */}
 
-        <div className="lg:w-2/3 mx-auto py-20">
-          <h1 className="text-4xl my-4">Projects</h1>
+        <div id="projects" className="lg:w-2/3 mx-auto py-20">
+          <h1 className="text-8xl my-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-600 py-8">
+            Work
+          </h1>
 
-          <div className="grid lg:grid-cols-3 gap-8 space-y-3 rounded">
+          <div className="grid lg:grid-cols-3 gap-8 relative">
             {allProject?.map((project: any) => (
-              <div
-                key={project._id}
-                className="p-4 border hover:shadow-lg duration-300"
+              <Link
+                href={`/projects/${project.slug.current}`}
+                key={project.slug?.current}
+                className="border border-zinc-700 rounded hover:shadow-lg duration-300 hover:scale-95"
               >
                 <Image
                   src={project.projectImage?.asset.url}
                   alt="project image"
-                  width={300}
+                  width={450}
                   height={300}
                 />
-                <h2 className="font-bold text-3xl border-b py-4">
+                <div className="py-2 flex text-white uppercase text-sm p-4">
+                  {project?.category.map((cat: any) => (
+                    <p key={cat?._id}>{cat?.title}</p>
+                  ))}
+                </div>
+                <h2 className="font-bold text-white text-xl px-4">
                   {project.title}
                 </h2>
-                <p>{project.summary}</p>
-                <div className="flex items-center justify-between space-x-2 my-4">
-                  <button className="px-1 border rounded">
-                    category:{" "}
-                    {project?.category.map((cat: any) => (
-                      <p key={cat?._id}>{cat?.title}</p>
-                    ))}
-                  </button>
-                  <p></p>
+                <p className="text-white/80 px-4 py-1">{project.summary}</p>
+                {/* <div className="uppercase space-x-2 text-white p-4 flex items-center justify-center border-b border-zinc-700">
+                  <a
+                    href={project.documentation}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button className="border border-zinc-700 p-2 rounded hover:scale-95 duration-300">
+                      Docs
+                    </button>
+                  </a>
+                  <a
+                    href={project.live}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button className="border border-zinc-700 p-2 rounded hover:scale-95 duration-300">
+                      Live
+                    </button>
+                  </a>
+                </div> */}
+                <div className="flex items-center justify-between space-x-2">
                   {/* <Link href="/">
                     <button className="bg-black text-white px-1 rounded">
                       See More
                     </button>
                   </Link> */}
                 </div>
-              </div>
+                {/* TAGS */}
+                <div className="p-4">
+                  {project.tags?.map((t: any) => (
+                    <button key={t?._id}>
+                      <p className="p-1 mx-1 my-1 border border-zinc-600 rounded text-white text-sm font-mono">
+                        {t?.title}
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </motion.div>
-      <motion.div>
-        <ServicesTwo />
-      </motion.div>
-      {/* TESTIMONTIALS */}
-      {/* <motion.div>
-        <Testimonials />
-      </motion.div> */}
-      <motion.div>
-        <Bio />
-      </motion.div>
+
+      {/* <div>
+        <Skills />
+      </div> */}
+      <div className="h-screen bg-gradient-to-b from-zinc-800 to-zinc-900">
+        <iframe
+          src="https://my.spline.design/interactivespherescopy-397558837af7b3db9602d1bcc603c9f9/"
+          frameBorder="0"
+          width="100%"
+          height="100%"
+        ></iframe>
+      </div>
     </>
   );
 };

@@ -30,7 +30,9 @@ function Services() {
       id="services"
       className="grid place-items-center bg-green-100 my-20 py-20"
     >
-      <p className="uppercase text-xl mb-20">Services</p>
+      <h2 className="lg:text-8xl mb-20 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500">
+        Services
+      </h2>
       <motion.div className="opacity-20 hover:opacity-100 duration-300 grid place-items-center space-y-10">
         <p
           onMouseOver={handleMouseOver}

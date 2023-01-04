@@ -1,6 +1,7 @@
 .largeText {
-  font-size: 15rem;
+  font-size: 5rem;
   font-weight: 700;
+  padding-top: 20px;
 }
 
 /* .spline {

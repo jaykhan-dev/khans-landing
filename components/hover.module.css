@@ -1,11 +1,11 @@
 .hoverAnim {
   position: relative;
-  color: #000;
+  color: #eeeeee;
   text-decoration: none;
 }
 
 .hoverAnim:hover {
-  color: #000;
+  color: #eeeeee;
 }
 
 .hoverAnim::before {

@@ -4,6 +4,8 @@ import Footer from "../components/footer";
 import NavTwo from "../components/navTwo";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ApolloProvider } from "@apollo/client";
+import client from "../apollo-client";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [mousePosition, setMousePosition] = useState({
@@ -54,7 +56,9 @@ export default function App({ Component, pageProps }: AppProps) {
       ></motion.div>
       <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <NavTwo />
-        <Component {...pageProps} />
+        <ApolloProvider client={client}>
+          <Component {...pageProps} />
+        </ApolloProvider>
         <Footer />
       </div>
     </>
