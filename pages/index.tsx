@@ -103,7 +103,7 @@ const Home: NextPage = ({ allProject }: any) => {
           <div className="grid lg:grid-cols-3 gap-8 relative">
             {allProject?.map((project: any) => (
               <Link
-                href={`/projects/${project.slug.current}`}
+                href={`/projects/${project._id}`}
                 key={project.slug?.current}
                 className="border border-zinc-700 rounded hover:shadow-lg duration-300 hover:scale-95"
               >
